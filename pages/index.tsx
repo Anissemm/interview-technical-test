@@ -1,4 +1,5 @@
 import { GetStaticProps } from 'next'
+import Head from 'next/head'
 import CourseArticle from '../components/CourseArticle'
 import InfoCard from '../components/InfoCard'
 import List from '../components/List'
@@ -7,6 +8,9 @@ import styles from '../styles/Home.module.scss'
 export default function Home({ courses }) {
   return (
     <div className={styles.container}>
+      <Head>
+        <title>Специализированные дисциплины</title> 
+      </Head>
       <h1 className={styles.heading}>Специализированные дисциплины</h1>
       <main >
         <div className={styles.coursesWrapper}>
