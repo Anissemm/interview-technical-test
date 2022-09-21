@@ -1,0 +1,1 @@
+export { CourseModule as default } from './CourseModule'
